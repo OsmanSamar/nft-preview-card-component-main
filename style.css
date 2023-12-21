@@ -1,0 +1,175 @@
+:root {
+  --bg-color: hsl(217, 54%, 11%);
+  /*Very dark blue (main BG):*/
+  --card-bg: hsl(216, 50%, 16%);
+  /*  Very dark blue (card BG):*/
+  --line-color: hsl(215, 32%, 27%);
+  /* Very dark blue (line):*/
+  --white: hsl(0, 0%, 100%);
+  /* - White: */
+
+   
+
+  --primary-color: hsl(215, 51%, 70%);
+  /*- Soft blue*/
+
+  --primary-color-200: hsl(178, 100%, 50%);
+  /* Cyan  */
+   --primary-font:"Outfit", sans-serif;
+ --secondary-font-size: 18px
+  --font-bold: 600;
+
+}
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+   width: 100vw;
+   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  font-family: var(--primary-font);
+  line-height: 1.6;
+
+}
+
+.card-contaier{
+
+    width: 320px;
+    background-color:var(--card-bg);
+    padding: 1rem;
+    border-radius: 20px; 
+   
+}
+
+.card-image {
+  position: relative;
+  height: 18rem;
+  margin-top: 1rem;
+}
+
+.main-image {
+    
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.icon-view-con {
+ position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  opacity: 0;
+}
+
+.icon-view-con:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title, .card-discription{
+   margin-inline: 0.5rem;
+   margin-top: 0.05em;
+     
+}
+    
+.card-title{
+    color: var(--white);
+    font-size: var(--secondary-font-size);
+    padding: 0.5em;
+    cursor: pointer;
+    
+   
+
+}
+
+.card-title:hover{
+    color: var(--primary-color-200);
+}
+
+
+ .card-discription{
+    color: var(--line-color);
+    padding: 0.5em;
+ }
+
+
+.flex-group{
+     display: flex;
+     justify-content: space-between;
+      border-bottom: 1px solid var(--line-color);
+     padding-bottom: 1.2em;
+     padding-top: 1.2em;
+     
+}
+
+.con{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em; 
+}
+
+.con img {
+ margin-right: 10px;
+
+}
+
+.cont-eth{
+
+   color: var(--primary-color-200);
+}
+
+.cont-eth, .time-left{
+    display: inline-flex;
+   margin-inline: 1rem;
+}
+
+
+
+.avatar{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.avatar > img {
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.avatar > p > span {
+  color: var(--white);
+}
+.avatar > p{
+      color: var(--line-color);
+}
+
+
+.avatar > p > span:hover {
+  color:  var(--primary-color-200);
+  cursor: pointer;
+}
+
